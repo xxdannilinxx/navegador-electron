@@ -1,0 +1,42 @@
+{
+  "name": "Navegador",
+  "version": "1.0.0",
+  "description": "Navegador baseado no electron.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist-all": "electron-builder -mw"
+  },
+  "repository": "https://github.com/xxdannilinxx/navegador-electron/",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Danilo Machado",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^10.1.3",
+    "electron-builder": "^22.8.1"
+  },
+  "build": {
+    "appId": "navegador.electron",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icons/win/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icons/mac/icon.icns"
+    }
+  },
+  "dependencies": {
+    "electron-localshortcut": "^3.2.1",
+    "electron-osx-prompt": "^1.4.1",
+    "electron-prompt": "^1.6.0"
+  }
+}
